@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .terminal {
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            border: 2px solid #0f0;
+            border-radius: 10px;
+        }
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            border-bottom: 2px solid #0f0;
+            border-radius: 10px 10px 0 0;
+        }
+        .terminal-header .buttons span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        .terminal-header .buttons .close {
+            background-color: #ff5f56;
+        }
+        .terminal-header .buttons .minimize {
+            background-color: #ffbd2e;
+        }
+        .terminal-header .buttons .maximize {
+            background-color: #27c93f;
+        }
+        .terminal-content {
+            padding: 20px;
+            background-color: #111;
+            border-radius: 0 0 10px 10px;
+        }
+        .command {
+            color: #0f0;
+        }
+        .response {
+            margin-left: 20px;
+        }
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .blink {
+            animation: blink 1s steps(1) infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+            </div>
+            <div>~/portfólio</div>
+            <div></div>
+        </div>
+        <div class="terminal-content">
+            <p class="command">root@linux:~$ <span class="blink">|</span></p>
+            <p class="command">root@linux:~$ ./about_me</p>
+            <p class="response">Hello there!, Aqui está um pouco sobre mim e meus trabalhos.</p>
+            
+            <p class="command">root@linux:~$ ./projects</p>
+            <p class="response">- <a href="#">Projeto 1: Análise de Logs e Detecção de Ameaças</a></p>
+            <p class="response">- <a href="#">Projeto 2: Desenvolvimento de Ferramentas de Segurança</a></p>
+            <p class="response">- <a href="#">Projeto 3: Análise de Vulnerabilidades</a></p>
+
+            <p class="command">root@linux:~$ ./skills</p>
+            <p class="response">- Linguagens: Python, Java, Bash, C++</p>
+            <p class="response">- Ferramentas: BurpSuite, Log360, Splunk, Wazuh</p>
+            <p class="response">- Certificados: Pentesting profissional, DCPT (In progress), Application Security, Shellcoding for Exploitation</p>
+
+            <p class="command">root@linux:~$ ./contact</p>
+            <p class="response">Email: <a href="mailto:viniciuslf90@gmail.com">Viniciuslf90@gmail.com</a></p>
+            <p class="response">LinkedIn: <a href="https://www.linkedin.com/in/vinicius-lf" target="_blank">linkedin.com/in/viniciuslf</a></p>
+            <p class="response">GitHub: <a href="https://github.com/Viniciuslf" target="_blank">github.com/viniciuslf</a></p>
+        </div>
+    </div>
+</body>
+</html>
